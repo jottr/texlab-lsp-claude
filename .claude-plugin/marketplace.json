@@ -1,0 +1,33 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "description": "LaTeX language server (texlab) plugin for Claude Code",
+  "name": "texlab-lsp",
+  "owner": {
+    "email": "jottr@users.noreply.github.com",
+    "name": "jottr"
+  },
+  "plugins": [
+    {
+      "author": {
+        "name": "jottr"
+      },
+      "category": "development",
+      "description": "LaTeX language server (texlab) for diagnostics and code intelligence in .tex, .bib, .sty, and .cls files",
+      "lspServers": {
+        "latex": {
+          "command": "texlab",
+          "extensionToLanguage": {
+            ".bib": "bibtex",
+            ".cls": "latex",
+            ".sty": "latex",
+            ".tex": "latex"
+          }
+        }
+      },
+      "name": "texlab-lsp",
+      "source": "./plugins/texlab-lsp",
+      "strict": false,
+      "version": "1.0.0"
+    }
+  ]
+}
